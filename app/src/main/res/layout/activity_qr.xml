@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black_shade_1"
+    android:padding="30dp"
+    tools:context=".QrActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="80dp"
+        android:textColor="@color/black"
+        android:textSize="48dp"
+        android:text="QR CODE" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        tools:src="@drawable/logo"/>
+
+    <Button
+        android:id="@+id/btn_generator"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button"
+        android:text="Generate QR Code"
+        android:textAllCaps="false"
+        android:textSize="22dp" />
+</LinearLayout>

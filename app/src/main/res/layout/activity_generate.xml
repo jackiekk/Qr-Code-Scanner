@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black_shade_1"
+    style="@style/AppTheme.MaterialTheme"
+    tools:context=".GenerateActivity">
+
+    <FrameLayout
+        android:id="@+id/flQr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp">
+
+
+        <TextView
+            android:id="@+id/tv_your"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="115dp"
+            android:elevation="1dp"
+            android:text="Your Code will appear here"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/image" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            layout_below=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginRight="15dp"
+            android:textColorHint="@color/white"
+            android:hint="Add text to embed in QR Code"
+            android:padding="5dp"
+            android:textColor="@color/white">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ti_ed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="300dp"
+            android:importantForAutofill="no"
+            android:inputType="textImeMultiLine"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_gen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="350dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button"
+            android:text ="Generate QR Code"
+            android:textAllCaps="false" />
+    </FrameLayout>
+
+
+</LinearLayout>
